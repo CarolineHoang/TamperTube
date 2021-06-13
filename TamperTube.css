@@ -1,0 +1,58 @@
+.appear{
+    opacity:1
+}
+
+@keyframes slide-miniplayer {
+  from {
+    bottom: 0;
+  }
+
+  to {
+    bottom: -100%;
+  }
+}
+
+.slide-out{
+  animation-name: slide-miniplayer;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.move-to-back{
+    z-index: -10;
+}
+
+.miniplayer-show-button{
+    white-space: normal;
+    width: min-content;
+
+}
+
+.mini_video_dimensions{
+ 	width: 400px !important; 
+    height: 225px !important; 
+    left: 0px !important; 
+    top: 0px !important;
+}
+
+
+a.styleless_link{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}    
+
+
+
+/*
+#items > ytd-item-section-renderer.style-scope.ytd-watch-next-secondary-results-renderer{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+*/
+
+#secondary > #related, #secondary > #sections.ytd-comments{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
