@@ -29,12 +29,18 @@
 }
 
 .mini_video_dimensions{
+	/* max width: 640px */	
  	width: 400px !important; 
     height: 225px !important; 
     left: 0px !important; 
     top: 0px !important;
 }
 
+.mini_video_bar_dimensions{
+	/* max width: 616px */	
+    /* width: 400px !important; */
+    width: 375px !important; 
+}
 
 a.styleless_link{
     text-decoration: none;
