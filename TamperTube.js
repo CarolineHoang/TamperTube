@@ -160,12 +160,17 @@
         //CREATING BUTTONS (if they do not already exist)
         //
         //create a miniplayer show/hide button that toggles it's z-index position
-        if (document.querySelector("#z_idx_switch_bttn") === null && 
+        if (document.querySelector("#z_idx_switch_bttn") === null &&
             document.querySelector("#z_idx_switch_bttn") === null ){
+
+            var appearance_mode = document.querySelector("#masthead").getAttribute("dark") === null ? "light" : "dark"
 
             var miniplayer_button = document.createElement("button")
             miniplayer_button.textContent = "show/hide \n miniplayer"
             miniplayer_button.classList.add("custom-nav-button")
+            if (appearance_mode === "dark"){
+                miniplayer_button.classList.add("dark_mode")
+            }
             miniplayer_button.id = "z_idx_switch_bttn"
 
             miniplayer_button.addEventListener( "click" , ()=> {
@@ -178,6 +183,9 @@
             var switch_comment_button = document.createElement("button")
             switch_comment_button.textContent = "switch \n layout"
             switch_comment_button.classList.add("custom-nav-button")
+            if (appearance_mode === "dark"){
+                switch_comment_button.classList.add("dark_mode")
+            }
             switch_comment_button.id = "layout_switch_bttn"
 
             switch_comment_button.addEventListener( "click" , ()=> {
