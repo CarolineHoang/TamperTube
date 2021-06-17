@@ -1,64 +1,81 @@
 .appear{
-    opacity:1
+  opacity:1
 }
 
 @keyframes slide-miniplayer {
-  from {
-    bottom: 0;
-  }
+from {
+  bottom: 0;
+}
 
-  to {
-    bottom: -100%;
-  }
+to {
+  bottom: -100%;
+}
 }
 
 .slide-out{
-  animation-name: slide-miniplayer;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+animation-name: slide-miniplayer;
+animation-duration: 1s;
+animation-fill-mode: forwards;
 }
 
 .move-to-back{
-    z-index: -10;
+  z-index: -10;
 }
 
 .miniplayer-show-button{
-    white-space: normal;
-    width: min-content;
+  white-space: normal;
+  width: min-content;
 
 }
 
 .mini_video_dimensions{
-	/* max width: 640px */	
- 	width: 400px !important; 
-    height: 225px !important; 
-    left: 0px !important; 
-    top: 0px !important;
+/* max width: 640px */	
+ width: 400px !important; 
+  height: 225px !important; 
+  left: 0px !important; 
+  top: 0px !important;
 }
 
 .mini_video_bar_dimensions{
-	/* max width: 616px */	
-    /* width: 400px !important; */
-    width: 375px !important; 
+/* max width: 616px */	
+  /* width: 400px !important; */
+  width: 375px !important; 
 }
 
 a.styleless_link{
-    text-decoration: none;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }    
-
-
 
 /*
 #items > ytd-item-section-renderer.style-scope.ytd-watch-next-secondary-results-renderer{
-    max-height: 80vh;
-    overflow-y: scroll;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 */
 
 #secondary > #related, #secondary > #sections.ytd-comments{
-    max-height: 80vh;
-    overflow-y: scroll;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.custom-nav-button {
+  color: var(--yt-button-icon-button-text-color, var(--yt-spec-text-secondary));
+  background-color: transparent;
+  border: none;
+  font-family: Roboto, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-style: none none none solid;
+  margin-left: 1rem;
+  text-align: left; 
+}
+.custom-nav-button:hover {
+color:white;  
+}
+
+.custom-nav-button:active{
+color:grey;  
 }

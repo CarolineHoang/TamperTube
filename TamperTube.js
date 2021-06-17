@@ -165,7 +165,7 @@
 
             var miniplayer_button = document.createElement("button")
             miniplayer_button.textContent = "show/hide \n miniplayer"
-            miniplayer_button.classList.add("miniplayer-show-button")
+            miniplayer_button.classList.add("custom-nav-button")
             miniplayer_button.id = "z_idx_switch_bttn"
 
             miniplayer_button.addEventListener( "click" , ()=> {
@@ -177,6 +177,7 @@
             //create a "switch comment section location" button that switches the location of the comment section (below) and the suggested videos section (right)
             var switch_comment_button = document.createElement("button")
             switch_comment_button.textContent = "switch \n layout"
+            switch_comment_button.classList.add("custom-nav-button")
             switch_comment_button.id = "layout_switch_bttn"
 
             switch_comment_button.addEventListener( "click" , ()=> {
